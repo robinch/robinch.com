@@ -1,9 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="robinchApp">
 <head>
-	<title>TEst</title>
+	<title>Robinch</title>
+	<link rel="stylesheet" type="text/css" href="app/css/bootstrap-3.1.1-dist/css/bootstrap.css">
 </head>
 <body>
-<h1>Halloj!!!!</h1>
+	<div class="container">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#/">Home</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#/secondView">Link</a></li>
+						<li><a href="#second">Second partial</a></li>
+					</ul>
+				</div>
+			</div>			
+		</nav>
+		<h1>Hello!</h1>
+		<div data-ng-view></div>
+	</div>
 </body>
+
+<script src="app/lib/jquery/jquery-2.1.0.js"></script>
+<script src="app/lib/angular-1.3.0-beta.3/angular.js"></script>
+<script src="app/css/bootstrap-3.1.1-dist/js/bootstrap.js"></script>
+<script src="app/lib/angular-1.3.0-beta.3/angular-animate.js"></script>
+<script src="app/lib/angular-1.3.0-beta.3/angular-route.js"></script>
+<script src="app/lib/angular-ui-tpls-0.10.0/ui-bootstrap-tpls-0.10.0.js"></script>
+<script src="app/js/app.js"></script>
+
+
 </html>
